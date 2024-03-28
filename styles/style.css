@@ -1,5 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
- /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+ /* header start*/
 .page {
  font-family: var(--font-family);
  font-size: var(--font-size);
@@ -20,7 +20,6 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-weight: 700;
   line-height: 130%;
 }
 
@@ -118,7 +117,74 @@
 .header__description {
   max-inline-size: 491px;
   justify-self: end;
+  font-weight: 700;
 }
 
+ /* header end*/
+
+ /* main start*/
+
+ /* section 1*/
+ .main {
+  padding: 60px 20px;
+ }
+
+ .section__margin-bottom {
+  margin-block-end: 80px;
+ }
+
+ .section {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  gap: 20px;
+ }
+
+ .section__title {
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: 130%;
+  color: var(--accent-color)
+ }
+
+ .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+.card__subtitle {
+  font-size: var(--font-size);
+}
+
+ .card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 130%;
+ } 
+
+/* section 2*/
+
+.section-concentration__title {
+  max-width: 315px;
+  margin-block-end: 20px;
+}
+
+.card__concentration {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  line-height: 130%;
+}
+
+.card__subtitle-margin-bottom {
+  margin-block-end: 10px;
+}
+
+/* section 3*/
+
+.card__subtitle-regular {
+  font-weight: 400;
+}
 
 
