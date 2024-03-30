@@ -109,11 +109,11 @@
 .header__theme-menu-button {
   background-color: transparent;
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-family);
   font-weight: var(--font-weight);
   color: var(--accent-color);
   border: none;
-  padding: 0 13px;
+  padding: 1px 13px;
   text-transform: lowercase;
 }
 
@@ -274,4 +274,117 @@
 
 .text-shadow__footer {
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* media width <=768px*/
+
+@media (width <=768px) {
+  .header {
+    min-inline-size: 768px;
+  }
+  .header__description {
+    max-inline-size: 364px;
+  }
+
+  .header__theme-menu{
+    justify-self: end;
+    align-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .section {
+    grid-template-columns: 236px 1fr;
+  }
+
+  .section-concentration__title {
+    max-width: 236px;
+  }
+
+  .card__concentration {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+}
+}
+
+/* media width <=375px*/
+
+@media (width <=375px) {
+
+  .decoration-zone__element {
+    top: 10px;
+    right: 39px;
+  }
+
+
+.decoration-zone__element::after {
+  top: 8px;
+  left: 43px;
+}
+
+  .decorated-zone::before {
+    inset-inline-end: 10px;
+      inset-block-start: 10px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 10px;
+    inset-block-end: 10px;
+  }
+
+  .header {
+    padding: 10px;
+    min-inline-size: 375px;
+  }
+
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header__title-margin {
+    margin-inline-start: 0px;
+  }
+
+  .header__description {
+    max-inline-size: 355px;
+    justify-self: center;
+  }
+
+  /* main start*/
+
+  .main {
+    padding: 40px 10px;
+  }
+  
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+   }
+
+   .section__margin-bottom {
+    margin-block-end: 50px;
+   }
+
+    .section-concentration__title {
+    max-width: 355px;
+    margin-block-end: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__margin-bottom {
+  margin-block-end: 10px;
+}
+
+.footer {
+  min-block-size: 668px;
+}
+
+
 }
