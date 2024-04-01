@@ -1,20 +1,20 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
  /* header start*/
 .page {
- font-family: var(--font-family);
- font-size: var(--font-size);
- font-weight: var(--font-weight);
- background-color: var(--background-color);
- background-image: var(--background-image);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- color: var(--main-text-color);
- background-attachment: fixed;
+  color: var(--main-text-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .text-shadow {
-  text-shadow: 4px 4px 0 var(--accent-color)
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .text-link {
@@ -34,61 +34,61 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
   color: var(--subtitle-color);
   line-height: 130%;
+  background-color: var(--accent-color);
 }
 
 .header {
-  height: 100vh;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  min-inline-size: 1024px;
+  height: 100vh;
   padding: var(--padding-hdr-footer);
+  min-inline-size: 1024px;
 }
 
 .decorated-zone::before {
-  position: absolute;
   content: "";
-  inline-size: 25px;
-  block-size: 25px;
+  position: absolute;
   border-inline-end: 1px solid var(--focus-color);
   border-block-start: 1px solid var(--focus-color);
+  inline-size: 25px;
+  block-size: 25px;
   inset-inline-end: 20px;
     inset-block-start: 20px;
 }
 
 .decorated-zone::after {
-  position: absolute;
   content: "";
-  inline-size: 25px;
-  block-size: 25px;
+  position: absolute;
   border-inline-start: 1px solid var(--focus-color);
   border-block-end: 1px solid var(--focus-color);
+  inline-size: 25px;
+  block-size: 25px;
   inset-inline-start: 20px;
   inset-block-end: 20px;
 }
 
 .decoration-zone__element {
   position: absolute;
-  display: block;
   top: 20px;
   right: 48px;
+  display: block;
   color: var(--accent-color);
 }
 
 .decoration-zone__element::after {
-  position: absolute;
-  border-radius: 50%;
   content: '';
-  width: 9px;
-  height: 9px;
+  position: absolute;
   top: 7px;
   left: 42px;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);;
 }
 
 .header__theme-menu{
@@ -107,14 +107,14 @@
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
-  font-family: var(--font-family);
-  font-size: var(--font-family);
-  font-weight: var(--font-weight);
-  color: var(--accent-color);
   border: none;
   padding: 1px 13px;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-family);
   text-transform: lowercase;
+  background-color: transparent;
 }
 
 .header__theme-menu-button:hover {
@@ -130,15 +130,15 @@
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
   border: 1px solid var(--focus-color);
+  pointer-events: none;
 }
 
 .header__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  font-weight: 700;
-  line-height: 82.5%;
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  line-height: 82.5%;
 }
 
 .header__title-margin {
@@ -146,9 +146,9 @@
 }
 
 .header__description {
-  max-inline-size: 491px;
   justify-self: end;
   font-weight: 700;
+  max-inline-size: 491px;
 }
 
  /* header end*/
@@ -158,41 +158,41 @@
  /* section 1*/
  .main {
   padding: 60px 20px;
- }
+  }
 
- .section__margin-bottom {
+  .section__margin-bottom {
   margin-block-end: 80px;
- }
+  }
 
- .section {
+  .section {
   display: grid;
   grid-template-columns: 315px 1fr;
   gap: 20px;
- }
+  }
 
- .section__title {
+  .section__title {
+  color: var(--subtitle-color);
   font-weight: 700;
   font-size: var(--font-size);
   line-height: 130%;
-  color: var(--subtitle-color)
- }
+  }
 
- .card {
+  .card {
   display: flex;
   flex-direction: column;
   gap: 20px;
- }
+  }
 
 .card__subtitle {
   font-size: var(--font-size);
 }
 
- .card__description {
+  .card__description {
   display: flex;
   flex-direction: column;
   gap: 10px;
   line-height: 130%;
- } 
+  } 
 
 /* section 2*/
 
@@ -228,10 +228,10 @@
 
 .gallery__card {
   display: block;
-  object-position: center;
-  object-fit: cover;
   width: 100%; 
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__margin-bottom {
@@ -263,13 +263,13 @@
 /* footer*/
 
 .footer {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  height: 100vh;
   position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: var(--padding-hdr-footer);
   min-block-size: 768px;
-  padding: var(--padding-hdr-footer)
 }
 
 .text-shadow__footer {
@@ -304,8 +304,8 @@
   }
 
   .card__concentration {
-    grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
 }
 }
 
@@ -348,8 +348,8 @@
   }
 
   .header__description {
-    max-inline-size: 355px;
     justify-self: center;
+    max-inline-size: 355px;
   }
 
   /* main start*/
@@ -361,11 +361,11 @@
   .section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-   }
+    }
 
-   .section__margin-bottom {
+    .section__margin-bottom {
     margin-block-end: 50px;
-   }
+    }
 
     .section-concentration__title {
     max-width: 355px;
@@ -385,6 +385,5 @@
 .footer {
   min-block-size: 668px;
 }
-
 
 }
