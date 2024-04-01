@@ -38,8 +38,8 @@
     --focus-color: #353430;
     --button-hover: #32312D66;
     --background-image: url(../images/cover-image-light.png);
-    --padding-hdr-footer: 20px;    
-    }
+    --padding-hdr-footer: 20px;
+  }
 
     .theme_light .visually-hidden {
       position: absolute;

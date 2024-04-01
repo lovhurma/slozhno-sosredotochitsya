@@ -91,7 +91,7 @@
   background-color: var(--accent-color);;
 }
 
-.header__theme-menu{
+.header__theme-menu {
   justify-self: center;
   align-self: start;
 }
@@ -280,32 +280,32 @@
 
 @media (width <=768px) {
   .header {
-    min-inline-size: 768px;
+  min-inline-size: 768px;
   }
   .header__description {
-    max-inline-size: 364px;
+  max-inline-size: 364px;
   }
 
-  .header__theme-menu{
-    justify-self: end;
-    align-self: center;
+  .header__theme-menu {
+  justify-self: end;
+  align-self: center;
   }
 
   .header__theme-menu-list {
-    flex-direction: column;
+  flex-direction: column;
   }
 
   .section {
-    grid-template-columns: 236px 1fr;
+  grid-template-columns: 236px 1fr;
   }
 
   .section-concentration__title {
-    max-width: 236px;
+  max-width: 236px;
   }
 
   .card__concentration {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 }
 
@@ -314,8 +314,8 @@
 @media (width <=375px) {
 
   .decoration-zone__element {
-    top: 10px;
-    right: 39px;
+  top: 10px;
+  right: 39px;
   }
 
 
@@ -325,57 +325,57 @@
 }
 
   .decorated-zone::before {
-    inset-inline-end: 10px;
-      inset-block-start: 10px;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
   }
   
   .decorated-zone::after {
-    inset-inline-start: 10px;
-    inset-block-end: 10px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
   }
 
   .header {
-    padding: 10px;
-    min-inline-size: 375px;
+  padding: 10px;
+  min-inline-size: 375px;
   }
 
   .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header__title-margin {
-    margin-inline-start: 0px;
+  margin-inline-start: 0px;
   }
 
   .header__description {
-    justify-self: center;
-    max-inline-size: 355px;
+  justify-self: center;
+  max-inline-size: 355px;
   }
 
   /* main start*/
 
   .main {
-    padding: 40px 10px;
+  padding: 40px 10px;
   }
   
   .section {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    }
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  }
 
-    .section__margin-bottom {
-    margin-block-end: 50px;
-    }
+  .section__margin-bottom {
+  margin-block-end: 50px;
+  }
 
-    .section-concentration__title {
-    max-width: 355px;
-    margin-block-end: 20px;
+  .section-concentration__title {
+  max-width: 355px;
+  margin-block-end: 20px;
   }
 
   .gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card__margin-bottom {
