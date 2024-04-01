@@ -10,6 +10,9 @@
   --accent-color: #FF0070;
   --main-text-color: #F1B2CE;
   --title-text-color: #DB00FF;
+  --subtitle-color: #000028;
+  --focus-color: #FF0070;
+  --button-hover: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
   --padding-hdr-footer: 20px
 }

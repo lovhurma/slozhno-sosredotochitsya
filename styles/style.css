@@ -22,7 +22,7 @@
 }
 
 .text-link:hover {
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--focus-color);
 }
 
 .text-link:focus {
@@ -30,12 +30,12 @@
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--focus-color);
 }
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--subtitle-color);
   line-height: 130%;
 }
 
@@ -54,8 +54,8 @@
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--focus-color);
+  border-block-start: 1px solid var(--focus-color);
   inset-inline-end: 20px;
     inset-block-start: 20px;
 }
@@ -65,8 +65,8 @@
   content: "";
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--focus-color);
+  border-block-end: 1px solid var(--focus-color);
   inset-inline-start: 20px;
   inset-block-end: 20px;
 }
@@ -118,7 +118,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -126,12 +126,12 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--focus-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--focus-color);
 }
 
 .header__title {
@@ -174,7 +174,7 @@
   font-weight: 700;
   font-size: var(--font-size);
   line-height: 130%;
-  color: var(--accent-color)
+  color: var(--subtitle-color)
  }
 
  .card {
