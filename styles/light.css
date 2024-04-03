@@ -12,6 +12,7 @@
   --button-hover: #32312D66;
   --background-image: url(../images/cover-image-light.png);
   --padding-hdr-footer: 20px;
+  --decoration-display: none;
 }
 
 .theme_light .visually-hidden {
@@ -27,7 +28,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --font-family: 'IBM Plex mono';
+    --font-family: 'IBM Plex mono', sans-serif;
     --font-size: 18px;
     --font-weight: 400;
     --background-color: #FFF1F7;
@@ -39,6 +40,7 @@
     --button-hover: #32312D66;
     --background-image: url(../images/cover-image-light.png);
     --padding-hdr-footer: 20px;
+    --decoration-display: none;
   }
 
     .theme_light .visually-hidden {

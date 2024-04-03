@@ -46,7 +46,8 @@
   align-items: center;
   height: 100vh;
   padding: var(--padding-hdr-footer);
-  min-inline-size: 1024px;
+  max-inline-size: 1440px;
+  min-inline-size: 768px;
 }
 
 .decorated-zone::before {
@@ -75,7 +76,7 @@
   position: absolute;
   top: 20px;
   right: 48px;
-  display: block;
+  display: var(--decoration-display);
   color: var(--accent-color);
 }
 
@@ -149,6 +150,7 @@
   justify-self: end;
   font-weight: 700;
   max-inline-size: 491px;
+  color: var(--subtitle-color);
 }
 
  /* header end*/
@@ -160,7 +162,7 @@
   padding: 60px 20px;
   }
 
-  .section__margin-bottom {
+  .main__section__margin-bottom {
   margin-block-end: 80px;
   }
 
@@ -171,7 +173,7 @@
   }
 
   .section__title {
-  color: var(--subtitle-color);
+  color: var(--focus-color);
   font-weight: 700;
   font-size: var(--font-size);
   line-height: 130%;
@@ -185,6 +187,7 @@
 
 .card__subtitle {
   font-size: var(--font-size);
+  color: var(--subtitle-color);
 }
 
   .card__description {
@@ -238,23 +241,23 @@
   margin-block-end: 20px;
 }
 
-.gallery__card-sunset {
+.gallery__card-1 {
   grid-column: span 2;
 }
 
-.gallery__card-ice {
+.gallery__card-2 {
   grid-row: span 2;
 }
 
-.gallery__card-tape {
+.gallery__card-3 {
   grid-row: 2 / span 2;
 }
 
-.gallery__card-books {
+.gallery__card-4 {
   grid-column: 2;
 }
 
-.gallery__card-sreet {
+.gallery__card-5 {
   grid-column: 2 / span 2;
 }
 
@@ -280,7 +283,8 @@
 
 @media (width <=768px) {
   .header {
-  min-inline-size: 768px;
+  max-inline-size: 768px;
+  min-inline-size: 375px;
   }
   .header__description {
   max-inline-size: 364px;
@@ -363,7 +367,7 @@
   grid-template-rows: repeat(2, auto);
   }
 
-  .section__margin-bottom {
+  .main__section__margin-bottom {
   margin-block-end: 50px;
   }
 
