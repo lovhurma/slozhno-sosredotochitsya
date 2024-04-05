@@ -315,7 +315,7 @@
 
 /* media width <=375px*/
 
-@media (width <=375px) {
+@media (width <=459px) {
 
   .decoration-zone__element {
   top: 10px;
