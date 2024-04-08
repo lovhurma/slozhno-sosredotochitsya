@@ -1,6 +1,6 @@
 
 .page.theme_light {
-  --font-family: 'IBM Plex mono';
+  --font-family: 'IBM Plex mono', serif;
   --font-size: 18px;
   --font-weight: 400;
   --background-color: #FFF1F7;
@@ -28,7 +28,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --font-family: 'IBM Plex mono', sans-serif;
+    --font-family: 'IBM Plex mono', serif;
     --font-size: 18px;
     --font-weight: 400;
     --background-color: #FFF1F7;
